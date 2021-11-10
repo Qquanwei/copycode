@@ -2,6 +2,7 @@
   "name": "format-syntax",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://qquanwei.github.io/copycode/",
   "dependencies": {
     "@babel/core": "7.12.3",
     "@pmmmwh/react-refresh-webpack-plugin": "0.4.3",
