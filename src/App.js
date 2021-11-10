@@ -1,14 +1,17 @@
-import logo from './logo.svg';
 import Editor from './Editor';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-        <header className="App-header">
-            <Editor />
-      </header>
-    </div>
+      <div className="App">
+          <h1>Copy My Code</h1>
+          <header className="App-header">
+              <div className="left">
+                  <Editor />
+              </div>
+              <div className="right"></div>
+          </header>
+      </div>
   );
 }
 
