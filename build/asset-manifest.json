@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2748a305.chunk.css",
+    "main.js": "/static/js/main.09703705.chunk.js",
+    "main.js.map": "/static/js/main.09703705.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d50f361c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d50f361c.js.map",
+    "static/css/2.58a45539.chunk.css": "/static/css/2.58a45539.chunk.css",
+    "static/js/2.00a16b1e.chunk.js": "/static/js/2.00a16b1e.chunk.js",
+    "static/js/2.00a16b1e.chunk.js.map": "/static/js/2.00a16b1e.chunk.js.map",
+    "static/js/3.1ced82ba.chunk.js": "/static/js/3.1ced82ba.chunk.js",
+    "static/js/3.1ced82ba.chunk.js.map": "/static/js/3.1ced82ba.chunk.js.map",
+    "css.worker.js": "/css.worker.js",
+    "css.worker.js.map": "/css.worker.js.map",
+    "editor.worker.js": "/editor.worker.js",
+    "editor.worker.js.map": "/editor.worker.js.map",
+    "html.worker.js": "/html.worker.js",
+    "html.worker.js.map": "/html.worker.js.map",
+    "index.html": "/index.html",
+    "json.worker.js": "/json.worker.js",
+    "json.worker.js.map": "/json.worker.js.map",
+    "static/css/2.58a45539.chunk.css.map": "/static/css/2.58a45539.chunk.css.map",
+    "static/css/main.2748a305.chunk.css.map": "/static/css/main.2748a305.chunk.css.map",
+    "static/js/2.00a16b1e.chunk.js.LICENSE.txt": "/static/js/2.00a16b1e.chunk.js.LICENSE.txt",
+    "ts.worker.js": "/ts.worker.js",
+    "ts.worker.js.LICENSE.txt": "/ts.worker.js.LICENSE.txt",
+    "ts.worker.js.map": "/ts.worker.js.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d50f361c.js",
+    "static/css/2.58a45539.chunk.css",
+    "static/js/2.00a16b1e.chunk.js",
+    "static/css/main.2748a305.chunk.css",
+    "static/js/main.09703705.chunk.js"
+  ]
+}
