@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/copycode/static/css/main.00ebc08b.chunk.css",
-    "main.js": "/copycode/static/js/main.19581d89.chunk.js",
-    "main.js.map": "/copycode/static/js/main.19581d89.chunk.js.map",
-    "runtime-main.js": "/copycode/static/js/runtime-main.8eca77c1.js",
-    "runtime-main.js.map": "/copycode/static/js/runtime-main.8eca77c1.js.map",
+    "main.css": "/copycode/static/css/main.20003b80.chunk.css",
+    "main.js": "/copycode/static/js/main.90bd7109.chunk.js",
+    "main.js.map": "/copycode/static/js/main.90bd7109.chunk.js.map",
+    "runtime-main.js": "/copycode/static/js/runtime-main.34afe1f8.js",
+    "runtime-main.js.map": "/copycode/static/js/runtime-main.34afe1f8.js.map",
     "static/css/2.0f097492.chunk.css": "/copycode/static/css/2.0f097492.chunk.css",
     "static/js/2.3082ac53.chunk.js": "/copycode/static/js/2.3082ac53.chunk.js",
     "static/js/2.3082ac53.chunk.js.map": "/copycode/static/js/2.3082ac53.chunk.js.map",
-    "static/js/3.bc66e74e.chunk.js": "/copycode/static/js/3.bc66e74e.chunk.js",
-    "static/js/3.bc66e74e.chunk.js.map": "/copycode/static/js/3.bc66e74e.chunk.js.map",
+    "static/js/3.1b6f4c7c.chunk.js": "/copycode/static/js/3.1b6f4c7c.chunk.js",
+    "static/js/3.1b6f4c7c.chunk.js.map": "/copycode/static/js/3.1b6f4c7c.chunk.js.map",
     "css.worker.js": "/copycode/css.worker.js",
     "css.worker.js.map": "/copycode/css.worker.js.map",
     "editor.worker.js": "/copycode/editor.worker.js",
@@ -20,17 +20,18 @@
     "json.worker.js": "/copycode/json.worker.js",
     "json.worker.js.map": "/copycode/json.worker.js.map",
     "static/css/2.0f097492.chunk.css.map": "/copycode/static/css/2.0f097492.chunk.css.map",
-    "static/css/main.00ebc08b.chunk.css.map": "/copycode/static/css/main.00ebc08b.chunk.css.map",
+    "static/css/main.20003b80.chunk.css.map": "/copycode/static/css/main.20003b80.chunk.css.map",
     "static/js/2.3082ac53.chunk.js.LICENSE.txt": "/copycode/static/js/2.3082ac53.chunk.js.LICENSE.txt",
+    "static/media/screenshot.png": "/copycode/static/media/screenshot.285e5224.png",
     "ts.worker.js": "/copycode/ts.worker.js",
     "ts.worker.js.LICENSE.txt": "/copycode/ts.worker.js.LICENSE.txt",
     "ts.worker.js.map": "/copycode/ts.worker.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.8eca77c1.js",
+    "static/js/runtime-main.34afe1f8.js",
     "static/css/2.0f097492.chunk.css",
     "static/js/2.3082ac53.chunk.js",
-    "static/css/main.00ebc08b.chunk.css",
-    "static/js/main.19581d89.chunk.js"
+    "static/css/main.20003b80.chunk.css",
+    "static/js/main.90bd7109.chunk.js"
   ]
 }

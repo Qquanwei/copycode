@@ -4,12 +4,10 @@ import './App.css';
 function App() {
   return (
       <div className="App">
-          <h1>Copy My Code</h1>
+          <h1>Copy Code</h1>
           <header className="App-header">
-              <div className="left">
-                  <Editor />
-              </div>
-              <div className="right"></div>
+              <Editor />
+              <img alt="" src={require('./screenshot.png').default}/>
           </header>
       </div>
   );

@@ -9,11 +9,16 @@
   }
 }
 
+.App {
+    opacity: .9;
+}
 .App-header {
-    min-height: 100vh;
     color: white;
-    display: flex;
     padding: 0 20px;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 
 .App-link {
@@ -31,11 +36,12 @@
 
 .App h1 {
     text-align: center;
-    margin: 20px 0 0 0;
+    padding: 10px 0 0 0;
+    margin: 0;
 }
 
-.App .left {
-}
-
-.App .right {
+.App img {
+    max-width: 80%;
+    margin-top: 20px;
+    border-radius: 20px;
 }
