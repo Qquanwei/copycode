@@ -17,6 +17,19 @@
 }
 
 .m-editor button {
-    width: 63px;
+    width: 80px;
+}
+
+.m-editor .actions {
+    width: 100%;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+
+.actions .action {
+    margin-right: 10px;
 }

@@ -1,8 +1,10 @@
 /* eslint-disable import/no-webpack-loader-syntax */
-import React, { useRef, useEffect, useCallback } from 'react';
+import React, { useRef, useEffect, useCallback, useState } from 'react';
 import stylecss from '!!raw-loader!./vendor/codemirror.css';
 import { ToastContainer, toast } from 'react-toastify';
-import { useSetRecoilState } from 'recoil';
+import Checkbox from 'rc-checkbox';
+import { AwesomeButton } from "react-awesome-button";
+import "react-awesome-button/dist/styles.css";
 import * as atoms from './atoms';
 import 'react-toastify/dist/ReactToastify.css';
 import './editor.css';
@@ -11,8 +13,8 @@ import './editor.css';
 function Editor() {
     const editorRef = useRef(null);
     const copyContainerRef = useRef(null);
-    const setCodeList = useSetRecoilState(atoms.codeList);
     const codemirrorRef = useRef(null);
+    const [forceLineBreak, setForceLineBreak] = useState(false);
 
     useEffect(() => {
         codemirrorRef.current = window.CodeMirror.fromTextArea(editorRef.current, {
@@ -27,21 +29,35 @@ function Editor() {
 
 
     const onClickCopy = useCallback(() => {
-        const container = copyContainerRef.current;
+        const container = copyContainerRef.current.cloneNode(true);
         const type = "text/html";
         const plainType = "text/plain";
+        const codeEle = container.querySelector('.CodeMirror-code');
+
+
+        [...codeEle.children].forEach((child) => {
+            if (forceLineBreak) {
+                const br = document.createElement('br');
+                codeEle.insertBefore(br, child);
+            }
+            const presentationHTML = child.children[0];
+            presentationHTML.innerHTML = presentationHTML.innerHTML.replace(/^ +/, (str) => {
+                const len = str.length;
+                let ans = '';
+                for (let i = 0; i < len; ++i) {
+                    ans += '&nbsp';
+                }
+                return ans;
+            })
+        });
+
         const textHtml = (`
-            <html lang="en">
-                <head>
-                    <meta charset="UTF-8"/>
-                 <style>
+                <div>
+                <style>
                  ${ stylecss }
                 </style>
-                </head>
-                <body>
-                    ${container.getInnerHTML()}
-                </body>
-            </html>
+                    ${container.innerHTML}
+                </dvi>
         `);
 
         const blob = new Blob([textHtml], { type })
@@ -53,13 +69,9 @@ function Editor() {
             })
         ]);
         toast('Copy successed !');
+    }, [forceLineBreak]);
 
-        setCodeList((list) => {
-            return list.concat({
-                code: container.getElementsByClassName('CodeMirror')[0].getInnerHTML()
-            });
-        });
-    }, []);
+    console.log(forceLineBreak);
 
     return (
         <div className="m-editor">
@@ -72,8 +84,13 @@ function Editor() {
                     </textarea>
                 </div>
             </div>
-            <div>
-                <button onClick={onClickCopy}>Copy !</button>
+            <div className="actions">
+                <div className="action">
+                    <Checkbox checked={forceLineBreak} onChange={e => setForceLineBreak(e.target.checked)} />
+                        强制换行
+                </div>
+
+                <AwesomeButton ripple type="primary" onPress={onClickCopy}>Copy !</AwesomeButton>
             </div>
 
             <ToastContainer autoClose={2000}></ToastContainer>
